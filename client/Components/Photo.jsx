@@ -9,13 +9,16 @@ const Photo = props => {
 
   <div className='photoBox'>
     <div>{ photo } </div>
-    <div>Name: </div>
-    <div>Date: </div>
-    <div>Genre: </div>
-    <div>Aperture: </div>
-    <div>Shutter Speed: </div>
-    <div>ISO: </div>
-    <div>Lighting: </div>
-    <div>Notes: </div>
+    <div>Name: {name}</div>
+    <div>Date: {date}</div>
+    <div>Genre: {genre}</div>
+    <div>Aperture: {aperture}</div>
+    <div>Shutter Speed: {shutterSpeed}</div>
+    <div>ISO: {iso}</div>
+    <div>Lighting: {lighting}</div>
+    <div>Notes: {notes}</div>
   </div>
-}
+};
+
+export default Photo;
+

@@ -12,3 +12,5 @@ const uploadsRouter = express.Router();
 // );
 
 // uploadsRouter.delete()
+
+// module.exports = uploadsRouter;

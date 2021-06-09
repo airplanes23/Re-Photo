@@ -43,6 +43,7 @@ module.exports = {
       '/api': 'http://localhost:3000/',
     },
     hot: true,
+    open: true,
   },
   plugins: [
     new HtmlWebpackPlugin({

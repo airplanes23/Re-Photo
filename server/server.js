@@ -5,15 +5,18 @@ const app = express();
 const PORT = 3000;
 
 
+
 const router = require('./routes/uploads');
 
 app.use(express.json());
-app.use(express.urlencoded({ extended: true }));
+// app.use(express.urlencoded({ extended: true }));
 // app.use('/assets', express.static('client/assets')); // use if adding static files to client folder (ie. jpgs)
 
 
 // route handlers
 // app.use('')
+
+app.use('/build', express.static(path.join(__dirname, '../build')));
 
 app.get('/', 
   (req, res) => {
@@ -33,7 +36,7 @@ app.use((err, req, res, next) => {
     log: 'Express error handler caught unknown middleware error',
     status: 500,
     message: { 
-      err: 'An error occurred'
+      err: 'An error occurred. ERROR: Check server logs for more details.'
     },
   };
   const errorObj = Object.assign({}, defaultErr, err);
