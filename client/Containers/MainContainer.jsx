@@ -6,36 +6,17 @@ import PhotoCollection from '../Components/PhotoCollection';
 import Inspiration from '../Components/Inspiration';
 import Education from '../Components/Education';
 import NavBar from '../Components/NavBar';
+import AddPhoto from '../Components/AddPhoto';
 
 const MainContainer = props => {
   return (
     <div className='main-container'>
       <div className='header'>
         <h1>im inside main container. main container will house routes/paths for: COLLECTION, INSPIRATION, HOME</h1>
-        <h2>look to unit 10 app.jsx for switch/routes</h2>
-        <h2>collection will be grid of photos</h2>
       </div>
   
       <NavBar />
-      {/* <nav>
-        <ul className='nav-bar'>
-          <li>
-            <Link to={'/collection'}>
-              <button type="button" className="btnSecondary">Collection</button>
-             </Link>
-          </li>
-          <li>
-            <Link to={'/inspiration'}>
-              <button type="button" className="btnSecondary">Inspiration</button>
-            </Link>        
-          </li>          
-          <li>
-            <Link to={'/education'}>
-              <button type="button" className="btnSecondary">Education</button>
-            </Link>        
-          </li>          
-        </ul>                  
-      </nav> */}
+
       <main className='router'>
         <Switch>
           <Route 
@@ -52,6 +33,11 @@ const MainContainer = props => {
             exact
             path='/education'
             component={Education}
+          />
+          <Route 
+            exact
+            path='/upload'
+            component={AddPhoto}
           />
           <Route 
             exact

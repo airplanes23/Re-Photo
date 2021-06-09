@@ -40,7 +40,9 @@ module.exports = {
   devServer: {
     publicPath: '/client/',
     proxy: {                        // come up with endpoints first so you can include them in your proxies
-      '/api/leaders': 'http://localhost:3000/',
+      '/api/': 'http://localhost:3000/',
+      '/images/': 'http://localhost:3000/', //? not sure if needed
+      '/photos/': 'http://localhost:3000/' //? not sure if needed
     },
     hot: true,
     open: true,

@@ -5,10 +5,13 @@ const fileController = {};
 
 fileController.getUploads = (req, res, next) => {
   try {
-    res.locals.uploads = JSON.parse(
+    const { results } = JSON.parse(
       fs.readFileSync(path.resolve(__dirname, '../data/data.json'), 'UTF-8')
     );
+
+    res.locals.uploads = results;
     return next();
+    
   } catch(err) {
     return next({
       log: `Error in fileController.getUploads. ERROR: ${err}`,

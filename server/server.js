@@ -9,12 +9,12 @@ const PORT = 3000;
 const router = require('./routes/uploads');
 
 app.use(express.json());
-// app.use(express.urlencoded({ extended: true }));
-// app.use('/assets', express.static('client/assets')); // use if adding static files to client folder (ie. jpgs)
+app.use(express.urlencoded({ extended: true }));
+app.use('/images', express.static('client/images')); // use if adding static files to client folder (ie. jpgs)
 
 
 // route handlers
-// app.use('')
+app.use('/photos', router); // use this endpoint for fetch request in frontend
 
 app.use('/build', express.static(path.join(__dirname, '../build')));
 

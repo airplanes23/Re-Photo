@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link, withRouter } from 'react-router-dom';
 
 // requiring json data for use in dropdown and checkboxes
-const speciesData = require('../data/species.json');
+// const speciesData = require('../data/species.json');
 
 // Custom hook for handling input boxes
 // saves us from creating onChange handlers for them individually
@@ -49,16 +49,16 @@ const CreatePost = props => {
 
   const savePhoto = () => {
     // check if name is empty
-    if (name === '') {
-      setNameError('required');
-    // check if height is not a number
-    } else if(isNaN(aperture)){
-      setApertureError('must be a number');
-    } else if(isNaN(shutterSpeed)){
-      setShutterSpeedError('must be a number');
-    } else if(isNaN(iso)){
-      setIsoError('must be a number');
-    } 
+    // if (name === '') {
+    //   setNameError('required');
+    // // check if height is not a number
+    // } else if(isNaN(aperture)){
+    //   setApertureError('must be a number');
+    // } else if(isNaN(shutterSpeed)){
+    //   setShutterSpeedError('must be a number');
+    // } else if(isNaN(iso)){
+    //   setIsoError('must be a number');
+    // } 
       const body = {
         name,
         date,
@@ -87,29 +87,29 @@ const CreatePost = props => {
     }
   
 
-  // useEffect to clear nameError when `name` is changed
-  useEffect(()=>{
-    setNameError(null);
-  }, [name]);
+  // // useEffect to clear nameError when `name` is changed
+  // useEffect(()=>{
+  //   setNameError(null);
+  // }, [name]);
 
-  // useEffect to clear heightError when `height` is changed
-  useEffect(()=>{
-    setApertureError(null);
-  }, [aperture]);
+  // // useEffect to clear heightError when `height` is changed
+  // useEffect(()=>{
+  //   setApertureError(null);
+  // }, [aperture]);
 
-  useEffect(()=>{
-    setShutterSpeedError(null);
-  }, [shutterSpeed]);
+  // useEffect(()=>{
+  //   setShutterSpeedError(null);
+  // }, [shutterSpeed]);
 
-  useEffect(()=>{
-    setIsoError(null);
-  }, [iso]);
+  // useEffect(()=>{
+  //   setIsoError(null);
+  // }, [iso]);
 
-  const speciesOptions = speciesData.map((speciesObj, idx) => {
-    return (
-      <option key={idx} value={idx}>{speciesObj.name}</option>
-    );
-  });
+  // const speciesOptions = speciesData.map((speciesObj, idx) => {
+  //   return (
+  //     <option key={idx} value={idx}>{speciesObj.name}</option>
+  //   );
+  // });
 
 
   return (
@@ -130,7 +130,7 @@ const CreatePost = props => {
         <div className="createCharFields">
           <label htmlFor="name">Name: </label>
           <input name="name" placeholder="Solar Eclipse 2021" value={name} onChange={nameOnChange} />
-          {nameError ? (<span className="errorMsg">{nameError}</span>) : null}
+          {/* {nameError ? (<span className="errorMsg">{nameError}</span>) : null} */}
         </div>
         <div className="createCharFields">
           <label htmlFor="date">Date: </label>
@@ -165,7 +165,7 @@ const CreatePost = props => {
         <div className="createCharFields">
           <label htmlFor="notes">Notes: </label>
           <input name="notes" placeholder="..." value={notes} onChange={notesOnChange} />
-          {heightError ? (<span className="errorMsg">{heightError}</span>) : null}
+          {/* {heightError ? (<span className="errorMsg">{heightError}</span>) : null} */}
         </div>
         
         <div className="createCharButtonContainer">
@@ -176,7 +176,7 @@ const CreatePost = props => {
           </Link>
           <button type="button" className="btnMain" onClick={savePhoto}>Save</button>
         </div>
-        
+
       </article>
     </section>
   );

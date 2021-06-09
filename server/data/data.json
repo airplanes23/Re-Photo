@@ -1,3 +1,17 @@
-[
-  
-]
+{ 
+  "reason": "maybe cause .json() returns an object instead? meaning you must start with an object?",
+  "results": [
+    {
+      "photo": "../../client/images/blood-moon.jpg",
+      "name": "this is a picture"
+    },
+    {
+      "photo": "../../client/images/blood-moon.jpg",
+      "name": "this is a picture"
+    },
+    {
+      "photo": "../../client/images/blood-moon.jpg",
+      "name": "this is a picture"
+    }
+  ]
+}

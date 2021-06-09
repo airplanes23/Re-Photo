@@ -1,5 +1,5 @@
 body {
-  background-color: peachpuff;
+  background-color: rgb(255, 227, 203);
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 0.3rem;
 }
@@ -37,4 +37,8 @@ nav {
   grid-template-areas: 
     "header header"
     "nav router";
+}
+.collection-main {
+  display: grid;
+  grid-template-rows: 3fr auto;
 }

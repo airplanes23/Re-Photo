@@ -3,21 +3,26 @@
 
 import React from 'react';
 
-const Photo = props => {
+const Photo = ({ info }) => {
 
-  const { name, date, genre, aperture, shutterSpeed, iso, lighting, notes } = props;
+  const { photo, name, date, genre, aperture, shutterSpeed, iso, lighting, notes } = info;
 
-  <div className='photoBox'>
-    <div>{ photo } </div>
-    <div>Name: {name}</div>
-    <div>Date: {date}</div>
-    <div>Genre: {genre}</div>
-    <div>Aperture: {aperture}</div>
-    <div>Shutter Speed: {shutterSpeed}</div>
-    <div>ISO: {iso}</div>
-    <div>Lighting: {lighting}</div>
-    <div>Notes: {notes}</div>
-  </div>
+  return(
+
+    <div className='photoBox'>
+      <div>{ photo }</div>
+      <ul>
+        <li>Name: {name}</li>
+        <li>Date: {date}</li>
+        <li>Genre: {genre}</li>
+        <li>Aperture: {aperture}</li>
+        <li>Shutter Speed: {shutterSpeed}</li>
+        <li>ISO: {iso}</li>
+        <li>Lighting: {lighting}</li>
+        <li>Notes: {notes}</li>
+      </ul>
+    </div>
+  )
 };
 
 export default Photo;
