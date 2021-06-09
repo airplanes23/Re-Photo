@@ -10,13 +10,13 @@ import Photo from './Photo';
 // render the array
 
 const PhotoCollection = (props) => {
-  const allPhotos = [];
-  allPhotos.push(<Photo />);
+  // const allPhotos = [];
+  // allPhotos.push(<Photo />);
 
   return (
     <div>
-      all photos will go here
-      {allPhotos}
+      <h3>all photos will go here</h3>
+      {/* {allPhotos} */}
       {/* <Link to={'/'}>
         <button
           type="button"

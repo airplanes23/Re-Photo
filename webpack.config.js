@@ -40,7 +40,7 @@ module.exports = {
   devServer: {
     publicPath: '/client/',
     proxy: {                        // come up with endpoints first so you can include them in your proxies
-      '/api': 'http://localhost:3000/',
+      '/api/leaders': 'http://localhost:3000/',
     },
     hot: true,
     open: true,
@@ -49,6 +49,7 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './client/index.html',
     }),
+    new webpack.HotModuleReplacementPlugin()
   ],
   resolve: {
     extensions: ['.js', '.jsx', '.css'],

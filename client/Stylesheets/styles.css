@@ -1,9 +1,40 @@
 body {
   background-color: peachpuff;
+  font-family: 'Bebas Neue', cursive;
+  letter-spacing: 0.3rem;
 }
 main {
   border: 1px solid red;
 }
 nav {
   border: 2px solid green;
+}
+
+
+.header {
+  grid-area: header;
+}
+.nav-bar {
+  grid-area: nav;
+  display: grid;
+  grid-template-rows: 2fr;
+  justify-items: center;
+}
+.router {
+  grid-area: router;
+}
+.links {
+  /* display: grid;
+  grid-template-rows: repeat(3,2fr); */
+  padding: 1rem;
+
+}
+.main-container {
+  padding: 3rem;
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  grid-template-rows: auto;
+  grid-template-areas: 
+    "header header"
+    "nav router";
 }
