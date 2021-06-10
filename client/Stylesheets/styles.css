@@ -3,13 +3,12 @@ body {
   font-family: 'Bebas Neue', cursive;
   letter-spacing: 0.3rem;
 }
-main {
+/* main {
   border: 1px solid red;
-}
+} */
 nav {
   border: 2px solid green;
 }
-
 
 .header {
   grid-area: header;
@@ -22,8 +21,11 @@ nav {
 }
 .router {
   grid-area: router;
+  border: 1px solid red;
+
 }
 .links {
+  align-self: start;
   /* display: grid;
   grid-template-rows: repeat(3,2fr); */
   padding: 1rem;
@@ -35,14 +37,22 @@ nav {
   grid-template-columns: 1fr 5fr;
   grid-template-rows: auto;
   grid-template-areas: 
-    "header header"
-    "nav router";
+    "nav header"
+    ". router";
 }
+
+/* for the photo and details */
+/* collection main houses photo boxes */
 .collection-main {
   display: grid;
   grid-template-rows: 3fr auto;
 }
 .photo-box {
+  border: 1px dotted black;
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 3fr 2fr;
+  /* max-width: 300px; */
+  margin: 1rem 0;
 }
+/* .photo {
+} */

@@ -68,6 +68,7 @@ class PhotoCollection extends Component {
         <Photo
           key={i}
           info={pic}  // pic should have one photo, and all the info. pass the entire pic object as a prop
+          className='photo'
         />
       );
     });
