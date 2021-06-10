@@ -42,3 +42,7 @@ nav {
   display: grid;
   grid-template-rows: 3fr auto;
 }
+.photo-box {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}

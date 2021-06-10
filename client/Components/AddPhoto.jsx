@@ -69,7 +69,7 @@ const CreatePost = props => {
         lighting,
         notes,
       };
-      fetch('/api/character', {
+      fetch('/photos', {
         method: 'POST',
         headers: {
           'Content-Type': 'Application/JSON'
@@ -118,7 +118,7 @@ const CreatePost = props => {
       <header className="pageHeader">
         <h2>Add to Collection</h2>
 
-        <Link to="/" className="backLink">
+        <Link to="/collection" className="backLink">
           <button type="button" className="btnSecondary">
               Back to Collection
           </button>
@@ -169,7 +169,7 @@ const CreatePost = props => {
         </div>
         
         <div className="createCharButtonContainer">
-          <Link to="/" className="backLink">
+          <Link to="/collection" className="backLink">
             <button type="button" className="btnSecondary">
               Cancel
             </button>

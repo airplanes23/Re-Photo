@@ -1,17 +1,34 @@
-{ 
-  "reason": "maybe cause .json() returns an object instead? meaning you must start with an object?",
+{
   "results": [
     {
-      "photo": "../../client/images/blood-moon.jpg",
-      "name": "this is a picture"
+      "photo":"https://upload.wikimedia.org/wikipedia/commons/f/f6/Blood_moon_73.jpg",
+      "name":"this is a picture",
+      "date":"April 5,2021",
+      "aperture":"2.8",
+      "shutter-speed":"250",
+      "iso":"800",
+      "lighting":"spring daytime",
+      "notes":"stuff"
     },
     {
-      "photo": "../../client/images/blood-moon.jpg",
-      "name": "this is a picture"
+      "photo":"",
+      "name":"this is a picture",
+      "date":"April 5,2021",
+      "aperture":"2.8",
+      "shutter-speed":"250",
+      "iso":"800",
+      "lighting":"spring daytime",
+      "notes":"stuff"
     },
     {
-      "photo": "../../client/images/blood-moon.jpg",
-      "name": "this is a picture"
+      "photo":"",
+      "name":"this is a picture",
+      "date":"April 5,2021",
+      "aperture":"2.8",
+      "shutter-speed":"250",
+      "iso":"800",
+      "lighting":"spring daytime",
+      "notes":"stuff"
     }
   ]
 }

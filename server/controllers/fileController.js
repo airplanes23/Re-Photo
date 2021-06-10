@@ -35,9 +35,12 @@ fileController.addUpload = (req, res, next) => {
     // how do i add a new post to the res.locals.uploads object?
     // use the req.body to add user input to the post
     // check if the object is in the json file already? make it an array?
+    const { id } = req.params;
+    res.locals.uploads[id] = req.body;
+
     fs.writeFileSync(
       path.resolve(__dirname, '../data/data.json'),
-      JSON.stringify(res.locals.uploads),
+      JSON.stringify({ results: res.locals.uploads }),
       'UTF-8'
     );
     return next();

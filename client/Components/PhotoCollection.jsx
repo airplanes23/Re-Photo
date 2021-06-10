@@ -14,14 +14,11 @@ class PhotoCollection extends Component {
   }
 
   componentDidMount() {
-    console.log(`empty arr? ${this.state.photos}`);
     fetch('/photos/')    // check backend for correct router for requests to '/photos'
       .then(res => {
-        console.log(res)  // returning response object
         return res.json();
       })
       .then((data) => {
-        console.log(data) // returning undefined
         // if (!Array.isArray(photos)) photos = [];
         return this.setState({
           photos: data,
@@ -52,11 +49,11 @@ class PhotoCollection extends Component {
 
 
   render() {
-    // if (!this.state.fetchedPhotos) return (
-    //   <div>
-    //     <h1>Loading data, please wait...</h1>
-    //   </div>
-    // );
+    if (!this.state.fetchedPhotos) return (
+      <div>
+        <h1>Loading data, please wait...</h1>
+      </div>
+    );
 
     const { photos } = this.state;
     // console.log('inside render' + photos) // returning undefined
@@ -74,7 +71,7 @@ class PhotoCollection extends Component {
         />
       );
     });
-    // console.log(photosArray)
+
     return (
       <section className="collection-main">
 
@@ -92,8 +89,6 @@ class PhotoCollection extends Component {
 
         <div className="charContainer">
           {photosArray}
-          {/* <img src="/client/images/blood-moon.jpg" />
-          <img src='https://www.w3schools.com/images/w3lynx_200.png' /> */}
         </div>
 
       </section>

@@ -11,12 +11,12 @@ uploadsRouter.get(
 );
 
   
-// uploadsRouter.post(
-//   '',           // path will be submit button? check prev units that involved adding character via button
-//   fileController.getUploads,
-//   fileController.addUpload,
-//   (res, res) => res.statusCode(200).json({ uploads: res.locals.uploads })
-// );
+uploadsRouter.post(
+  '/',           // path will be submit button? check prev units that involved adding character via button
+  fileController.getUploads,
+  fileController.addUpload,
+  (req, res) => res.status(200).json({ results: res.locals.uploads })   // results? uploads? photos??
+);
 
 // uploadsRouter.delete()
 

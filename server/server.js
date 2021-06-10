@@ -3,14 +3,14 @@ const express = require('express');
 
 const app = express();
 const PORT = 3000;
-
+n
 
 
 const router = require('./routes/uploads');
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use('/images', express.static('client/images')); // use if adding static files to client folder (ie. jpgs)
+// app.use('/images', express.static('server/data/images')); // use if adding static files to client folder (ie. jpgs)
 
 
 // route handlers
