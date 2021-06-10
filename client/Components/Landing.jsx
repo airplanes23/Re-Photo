@@ -3,7 +3,7 @@ import { Link, withRouter } from 'react-router-dom';
 
 const Landing = () => {
   return (
-    <div>
+    <div className='landing-main'>
       <h2>possible slideshow here?</h2>
     </div>
   )

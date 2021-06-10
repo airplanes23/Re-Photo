@@ -28,26 +28,6 @@ class PhotoCollection extends Component {
       .catch(err => console.log('PhotoCollection.componentDidMount: get photos: ERROR: ', err));
   }
 
-  // componentDidMount() {
-  //   fetch('/photos', {
-  //     headers: {
-  //       'Content-Type': 'application/json',
-  //       Accept: 'application/json'
-  //     },
-  //   })
-  //     .then(res => {
-  //       console.log(res)
-  //       return res.json();
-  //     })
-  //     .then(jsonRes => {
-  //       console.log(jsonRes)
-  //       return this.setState({
-  //         photos: jsonRes,
-  //       });
-  //     });
-  // }
-
-
   render() {
     if (!this.state.fetchedPhotos) return (
       <div>
@@ -77,13 +57,13 @@ class PhotoCollection extends Component {
       <section className="collection-main">
 
         <header className="pageHeader">
-          <h2>Collection</h2>
+          {/* <h2>Collection</h2> */}
           <Link to={'/upload'}>
             <button
               type="button"
               className="btnSecondary"
             >
-              Upload a creation
+              Upload!
             </button>
           </Link>
         </header>

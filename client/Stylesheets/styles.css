@@ -1,44 +1,57 @@
 body {
   background-color: rgb(255, 227, 203);
   font-family: 'Bebas Neue', cursive;
-  letter-spacing: 0.3rem;
+  width: 100%;
+  border: 3px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-/* main {
-  border: 1px solid red;
-} */
+
 nav {
-  border: 2px solid green;
+  /* border: 2px solid green; */
 }
 
 .header {
   grid-area: header;
+  letter-spacing: 0.7rem;
+  font-size: 3rem;
+  text-shadow: 6px 5px 5px #986c6c;
 }
 .nav-bar {
   grid-area: nav;
   display: grid;
-  grid-template-rows: 2fr;
+  grid-template-columns: repeat(3,1fr);
   justify-items: center;
+  font-size: 1.5rem;
+  letter-spacing: 0.5rem;
+  text-decoration: none;
 }
 .router {
   grid-area: router;
-  border: 1px solid red;
-
+  /* border: 1px solid red; */
+  justify-items: center;
 }
 .links {
-  align-self: start;
+  /* align-self: start; */
   /* display: grid;
   grid-template-rows: repeat(3,2fr); */
   padding: 1rem;
-
+  text-decoration: none;
 }
+
+
 .main-container {
   padding: 3rem;
   display: grid;
-  grid-template-columns: 1fr 5fr;
-  grid-template-rows: auto;
+  justify-content: center;
+  width: 1000px;
+  /* grid-template-columns: 1fr 5fr; */
+  /* grid-template-rows: auto;*/
   grid-template-areas: 
-    "nav header"
-    ". router";
+    "header"
+    "nav"
+    "router";
 }
 
 /* for the photo and details */
@@ -53,6 +66,48 @@ nav {
   grid-template-columns: 3fr 2fr;
   /* max-width: 300px; */
   margin: 1rem 0;
+  font-size: 1.5rem;
 }
 /* .photo {
 } */
+
+.inspiration-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.education-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.landing-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2rem;
+}
+
+.pageHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btnSecondary {
+  border-radius: 0.5rem;
+
+}
+
+ul {
+  list-style-type: none;
+  margin: 1rem 0;
+}
+
+li {
+  font-size: 1rem;
+}

@@ -26,11 +26,7 @@ const Photo = ({ info }) => {
       {/* <div>{ photo }</div>
       {/* <img src={getImgSrc(photo)} /> */}
       {/* <img src={getImgSrc(photo)} /> */}
-      {/* {photo && (
-        <figure className="charPhoto">
-          <img src={getImgSrc(photo)} />
-        </figure>
-      )} */}
+
       <img
         src={photo}
         alt="photo"

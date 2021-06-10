@@ -36,11 +36,11 @@ fileController.addUpload = (req, res, next) => {
     // use the req.body to add user input to the post
     // check if the object is in the json file already? make it an array?
 
-    res.locals.uploads.push(req.body);
+    res.locals.uploads.unshift(req.body);
   
     fs.writeFileSync(
       path.resolve(__dirname, '../data/data.json'),
-      JSON.stringify({ results: res.locals.uploads }),
+      JSON.stringify({ results: res.locals.uploads }, null, 4),
       'UTF-8'
     );
     return next();

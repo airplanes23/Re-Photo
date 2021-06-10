@@ -2,7 +2,7 @@ import React from 'react';
 
 const Inspiration = () => {
   return (
-    <div>
+    <div className='inspiration-main'>
       <h3>you gon' be inspired TODAY</h3>
       {/* <Link to={'/'}>
         <button
