@@ -62,8 +62,7 @@ class PhotoCollection extends Component {
             <button
               type="button"
               className="btnSecondary"
-            >
-              Upload!
+            ><strong>Upload!</strong>
             </button>
           </Link>
         </header>

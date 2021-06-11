@@ -4,53 +4,66 @@
             "photo": "https://live.staticflickr.com/65535/51238061156_43c62bc0c7_z.jpg",
             "name": "solar eclipse 2021",
             "date": "06/10/2021",
-            "genre": "",
-            "aperture": "",
-            "shutterSpeed": "",
-            "iso": "",
-            "lighting": "",
-            "notes": ""
+            "genre": "Astronomy",
+            "aperture": "1.4",
+            "shutterSpeed": "1/6400",
+            "iso": "100",
+            "lighting": "Sunrise/Daylight",
+            "notes": "dont ever do this if youre working on a solo project. go sleep!"
         },
         {
             "photo": "https://live.staticflickr.com/65535/51238030641_fb6c2253a7_z.jpg",
             "name": "this is a BLOODMOON",
-            "date": "April 5,2021",
+            "date": "01/20/2019",
+            "genre": "Astrophotography",
             "aperture": "2.8",
-            "shutter-speed": "250",
+            "shutterSpeed": "1/250",
             "iso": "800",
-            "lighting": "spring daytime",
-            "notes": "stuff"
+            "lighting": "Nighttime/Moonlight",
+            "notes": "Use a tripod! And dress more appropriately - I almost lost some toes that night. Some post-processing required."
+        },
+        {
+            "photo": "https://live.staticflickr.com/65535/51237349277_3cdd6f2a97_z.jpg",
+            "name": "Car under Manhattan Bridge",
+            "date": "02/10/2019",
+            "genre": "Car/Product Photography",
+            "aperture": "3.2",
+            "shutterSpeed": "1/125",
+            "iso": "200",
+            "lighting": "Winter daylight",
+            "notes": "Cliche NYC shot by the Manhattan Bridge in Dumbo, Brooklyn. Hop on a call with the driver to seamlessly position the car properly."
         },
         {
             "photo": "https://live.staticflickr.com/65535/51239116840_f77ae105c7_z.jpg",
-            "name": "this is a picture",
-            "date": "April 5,2021",
-            "aperture": "2.8",
-            "shutter-speed": "250",
-            "iso": "800",
-            "lighting": "spring daytime",
-            "notes": "stuff"
+            "name": "CAMP",
+            "date": "09/26/2020",
+            "genre": "Astrophotography/Nature",
+            "aperture": "3.2",
+            "shutterSpeed": "1/250",
+            "iso": "600",
+            "lighting": "Nighttime, late-Summer",
+            "notes": "Photo stitch! Combined a camping shot from upstate NY with a stars/Milky Way shot taken in Hawaii"
         },
         {
             "photo": "https://live.staticflickr.com/65535/51239116830_d22bcdbc8e_z.jpg",
-            "name": "this is a picture",
-            "date": "April 5,2021",
+            "name": "Sunrise Hotair Balloon Ride - Egypt",
+            "date": "12/02/2019",
             "aperture": "2.8",
-            "shutter-speed": "250",
-            "iso": "800",
-            "lighting": "spring daytime",
-            "notes": "stuff"
+            "shutterSpeed": "1/800",
+            "iso": "200",
+            "lighting": "Egypt desert sunrise",
+            "notes": "Hot air balloons are hot, who knew?"
         },
         {
             "photo": "https://live.staticflickr.com/65535/51238263788_7e864a0706_z.jpg",
             "name": "MY BBYGORL",
-            "date": "",
-            "genre": "",
-            "aperture": "",
-            "shutterSpeed": "",
-            "iso": "",
-            "lighting": "",
-            "notes": ""
+            "date": "yes pls",
+            "genre": "Portraiture",
+            "aperture": "2.0",
+            "shutterSpeed": "1/125",
+            "iso": "600",
+            "lighting": "City; Sunset",
+            "notes": "oof"
         }
     ]
 }

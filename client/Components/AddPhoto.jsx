@@ -25,14 +25,6 @@ const CreatePost = (props) => {
   const [iso, isoOnChange] = useInput("");
   const [lighting, lightingOnChange] = useInput("");
   const [notes, notesOnChange] = useInput("");
-  // const [ name, nameOnChange ] = useInput('');
-  // const [ gender, genderOnChange ] = useInput('');
-  // const [ birth_year, birthYearOnChange ] = useInput('');
-  // const [ eye_color, eyeColorOnChange ] = useInput('');
-  // const [ skin_color, skinColorOnChange ] = useInput('');
-  // const [ hair_color, hairColorOnChange ] = useInput('');
-  // const [ mass, massOnChange ] = useInput('');
-  // const [ height, heightOnChange ] = useInput('');
   // const [ species, setSpecies ] = useState(speciesData[0].name);
   // const [ species_id, setSpeciesId ] = useState(speciesData[0]._id);
   // const [ homeworld, setHomeworld ] = useState(planetsData[0].name);
@@ -114,20 +106,19 @@ const CreatePost = (props) => {
   // });
 
   return (
-    <section className="mainSection createCharContainer">
-      <header className="pageHeader">
-        <h2>Add to Collection</h2>
+    <section className="add-photo-component">
 
+      {/* <header className="pageHeader"> */}
         <Link to="/collection" className="backLink">
           <button type="button" className="btnSecondary">
             Back to Collection
           </button>
         </Link>
-      </header>
+      {/* </header> */}
 
-      <article className="card createChar">
-        <h3>Enter your photo details</h3>
-        <div className="createCharFields">
+      <article className="upload-table">
+        <h3>Add to collection</h3>
+        <div className="upload-fields">
           <label htmlFor="photo-url">Photo URL: </label>
           <input
             name="photo"
@@ -137,7 +128,7 @@ const CreatePost = (props) => {
           />
           {/* {nameError ? (<span className="errorMsg">{nameError}</span>) : null} */}
         </div>
-        <div className="createCharFields">
+        <div className="upload-fields">
           <label htmlFor="name">Name: </label>
           <input
             name="name"
@@ -147,7 +138,7 @@ const CreatePost = (props) => {
           />
           {/* {nameError ? (<span className="errorMsg">{nameError}</span>) : null} */}
         </div>
-        <div className="createCharFields">
+        <div className="upload-fields">
           <label htmlFor="date">Date: </label>
           <input
             name="date"
@@ -162,7 +153,7 @@ const CreatePost = (props) => {
             {speciesOptions}
           </select>
         </div> */}
-        <div className="createCharFields">
+        <div className="upload-fields">
           <label htmlFor="genre">Genre: </label>
           <input
             name="genre"
@@ -171,7 +162,7 @@ const CreatePost = (props) => {
             onChange={genreOnChange}
           />
         </div>
-        <div className="createCharFields">
+        <div className="upload-fields">
           <label htmlFor="aperture">Aperture: </label>
           <input
             name="aperture"
@@ -180,16 +171,16 @@ const CreatePost = (props) => {
             onChange={apertureOnChange}
           />
         </div>
-        <div className="createCharFields">
+        <div className="upload-fields">
           <label htmlFor="shutterSpeed">Shutter Speed: </label>
           <input
             name="shutterSpeed"
-            placeholder="8000"
+            placeholder="1/8000"
             value={shutterSpeed}
             onChange={shutterSpeedOnChange}
           />
         </div>
-        <div className="createCharFields">
+        <div className="upload-fields">
           <label htmlFor="iso">ISO: </label>
           <input
             name="iso"
@@ -198,7 +189,7 @@ const CreatePost = (props) => {
             onChange={isoOnChange}
           />
         </div>
-        <div className="createCharFields">
+        <div className="upload-fields">
           <label htmlFor="lighting">Lighting: </label>
           <input
             name="lighting"
@@ -207,9 +198,11 @@ const CreatePost = (props) => {
             onChange={lightingOnChange}
           />
         </div>
-        <div className="createCharFields">
+        <div className="upload-fields">
           <label htmlFor="notes">Notes: </label>
-          <input
+          <textarea
+            rows="4"
+            columns="20"
             name="notes"
             placeholder="..."
             value={notes}
@@ -218,15 +211,16 @@ const CreatePost = (props) => {
           {/* {heightError ? (<span className="errorMsg">{heightError}</span>) : null} */}
         </div>
 
-        <div className="createCharButtonContainer">
+        <div className="upload-button-container">
           <Link to="/collection" className="backLink">
             <button type="button" className="btnSecondary">
               Cancel
             </button>
           </Link>
+          <Link to="/collection">
           <button type="button" className="btnMain" onClick={savePhoto}>
             Save
-          </button>
+          </button></Link>
         </div>
       </article>
     </section>

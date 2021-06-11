@@ -28,18 +28,19 @@ const Photo = ({ info }) => {
       {/* <img src={getImgSrc(photo)} /> */}
 
       <img
+        className='image'
         src={photo}
         alt="photo"
       />
       <ul>
-        <li>Name: {name}</li>
-        <li>Date: {date}</li>
-        <li>Genre: {genre}</li>
-        <li>Aperture: {aperture}</li>
-        <li>Shutter Speed: {shutterSpeed}</li>
-        <li>ISO: {iso}</li>
-        <li>Lighting: {lighting}</li>
-        <li>Notes: {notes}</li>
+        <li><strong>Name:</strong> {name}</li>
+        <li><strong>Date:</strong> {date}</li>
+        <li><strong>Genre:</strong> {genre}</li>
+        <li><strong>Aperture:</strong> {aperture}</li>
+        <li><strong>Shutter Speed:</strong> {shutterSpeed}</li>
+        <li><strong>ISO:</strong> {iso}</li>
+        <li><strong>Lighting:</strong> {lighting}</li>
+        <li><strong>Notes:</strong> {notes}</li>
       </ul>
     </div>
   );

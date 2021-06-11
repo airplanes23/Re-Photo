@@ -12,7 +12,7 @@ const MainContainer = (props) => {
   return (
     <div className="main-container">
       <div className="header">
-        <h1>Let's get creatin'!</h1>
+        <h1 className="tracking-in-expand">Let's get creatin'!</h1>
       </div>
 
       <NavBar />
