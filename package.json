@@ -6,7 +6,9 @@
   "scripts": {
     "start": "cross-env NODE_ENV=production nodemon server/server.js",
     "build": "cross-env NODE_ENV=production webpack",
-    "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open --hot \" \"nodemon ./server/server.js\""
+    "dev2": "concurrently \"cross-env NODE_ENV=development webpack serve --open --hot \" \"nodemon ./server/server.js\" \"sass --watch client/stylesheets:client/stylesheets\"",
+    "dev:hot": "NODE_ENV=development nodemon ./server/server.js & webpack serve --open --hot --inline --progress --content-base ./",
+    "dev": "concurrently \"cross-env NODE_ENV=development webpack serve --open --hot --inline --progress --content-base ./\" \"nodemon ./server/server.js\" \"sass --watch client/stylesheets:client/stylesheets\""
   },
   "nodemonConfig": {
     "ignore": [

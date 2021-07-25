@@ -17,12 +17,14 @@ app.use(express.urlencoded({ extended: true }));
 app.use('/photos', router); // use this endpoint for fetch request in frontend
 
 app.use('/build', express.static(path.join(__dirname, '../build')));
+// app.use('/build', express.static(path.join(__dirname, '../dist'))); // /dist? /build?
 
 app.get('/', 
   (req, res) => {
     return res
       .status(200)
       .sendFile(path.resolve(__dirname, '../client/index.html'));
+      // .sendFile(path.resolve(__dirname, './index.html'));
 });
 
 app.use('*', 

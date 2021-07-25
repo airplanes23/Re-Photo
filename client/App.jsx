@@ -1,6 +1,6 @@
 import React from 'react';
 import MainContainer from './Containers/MainContainer';
-import './Stylesheets/styles.css'
+import './stylesheets/styles.css'
 
 const App = () => (
   <div>
