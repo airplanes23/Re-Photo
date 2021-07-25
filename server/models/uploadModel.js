@@ -1,8 +1,7 @@
 const mongoose = require('mongoose');
 require('dotenv').config();
 
-const MONGO_URI = "mongodb+srv://raubern:qTPqpYDsUxzPh6T5@photo-storage.ed7ve.mongodb.net/myFirstDatabase?retryWrites=true&w=majority";
-//password: qTPqpYDsUxzPh6T5
+const MONGO_URI = "";
 
 mongoose
   .connect(MONGO_URI, {
